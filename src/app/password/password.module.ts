@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { PasswordPageRoutingModule } from './password-routing.module';
-
+import { InputModule } from '../components/input/input.module';
 import { PasswordPage } from './password.page';
 
 @NgModule({
@@ -13,7 +13,8 @@ import { PasswordPage } from './password.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    PasswordPageRoutingModule
+    PasswordPageRoutingModule,
+    InputModule
   ],
   declarations: [PasswordPage]
 })

@@ -20,23 +20,33 @@
   </div>
 </div>
 <div class="settings">
-<ion-list>
+
   <ion-item>
-    <ion-label>Input</ion-label>
-    <ion-input></ion-input>
+    <ion-label>Sexe</ion-label>
+    <ion-select [(ngModel)]="Sexe" multiple="false">
+      <ion-select-option>Femme</ion-select-option>
+      <ion-select-option>Homme</ion-select-option>
+    </ion-select>
   </ion-item>
   <ion-item>
-    <ion-label></ion-label>
-    <ion-toggle slot="end"></ion-toggle>
+    <ion-label>Date de naissance</ion-label>
+    <ion-datetime value="1990-01-01" placeholder="Choisir Date"></ion-datetime>
   </ion-item>
   <ion-item>
-    <ion-label>Radio</ion-label>
-    <ion-radio slot="end"></ion-radio>
+    <ion-label position="floating">Nom </ion-label>
+    <ion-input ></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label></ion-label>
-    <ion-checkbox slot="start"></ion-checkbox>
+    <ion-label position="floating">Prenom</ion-label>
+    <ion-input ></ion-input>
   </ion-item>
-</ion-list>
+  <ion-item >
+    <ion-label fontsize="20px" position="stacked">Adresse Complete</ion-label>
+    <ion-input placeholder="Address Line 1"></ion-input>
+    <ion-input placeholder="Address Line 2"></ion-input>
+    <ion-input placeholder="City"></ion-input>
+    <ion-input placeholder="State"></ion-input>
+    <ion-input placeholder="Zip Code"></ion-input>
+  </ion-item>
 </div>
 </ion-content>

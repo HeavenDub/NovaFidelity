@@ -39,6 +39,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'stores',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>import('../stores/stores.module').then( m => m.StoresPageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'

@@ -3,7 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: 'Home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
@@ -28,22 +28,30 @@ const routes: Routes = [
     loadChildren: () => import('./password/password.module').then( m => m.PasswordPageModule)
   },
   {
-    path: 'settings',
+    path: 'Settings',
     loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
   },
-  {
-    path: 'points',
-    loadChildren: () => import('./points/points.module').then( m => m.PointsPageModule)
-  },
+  
   
   {
     path: '',
     loadChildren: () => import('./tab-bar/tab-bar.module').then(m => m.TabBarPageModule)
   },
   {
-    path: 'points',
+    path: 'Points',
     loadChildren: () => import('./points/points.module').then( m => m.PointsPageModule)
+  },
+  
+  {
+    path: 'Stores',
+    loadChildren: () => import('./stores/stores.module').then( m => m.StoresPageModule)
+  },  {
+    path: 'pre-password',
+    loadChildren: () => import('./pre-password/pre-password.module').then( m => m.PrePasswordPageModule)
   }
+
+
+
 
 
 ];

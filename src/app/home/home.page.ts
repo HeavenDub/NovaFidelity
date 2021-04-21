@@ -26,5 +26,19 @@ export class HomePage  {
       icon:'md-log-out',
     },
     ]},
-  ]}
+    
+  ]
+  options = {
+    centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: -60,
+  };
+
+  categories = {
+    slidesPerView: 2.5,
+  };
+
+  constructor() {}
+
+}
 

@@ -11,5 +11,7 @@ export class SettingsPage implements OnInit {
 
   ngOnInit() {
   }
+  Sexe(){
 
+  }
 }

@@ -1,6 +1,8 @@
 {
   "name": "ionic5tuts",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "58e2b882"
 }
